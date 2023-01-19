@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Request Reference Form</title>
+  <style>
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type=text], input[type=email], input[type=tel], textarea {
+      width: 100%;
+      padding: 12px 0px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    #container {
+    display: flex;
+    flex-direction: row;
+}
+
+#box1 {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+#box2 {
+    width: 200px;
+    height: 200px;
+    background-color: white(255, 0, 0);
+    border: 1px solid black;
+}
+  </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1">
+          <p><form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <br>
+            <label for="reference">Reference:</label>
+            <textarea id="reference" name="reference" rows="5" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+          </p>
+        </div>
+        <div id="box2"></div>
+      </div>
+  
+</body>
+</html>
